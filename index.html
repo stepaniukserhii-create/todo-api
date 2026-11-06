@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список справ через API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Список справ</h1>
+
+        <!-- Поле вводу і кнопка додавання -->
+        <div class="input-area">
+            <input type="text" id="taskInput" placeholder="Нова справа...">
+            <button id="addBtn">Додати</button>
+        </div>
+
+        <!-- Статус: завантаження або помилка -->
+        <p id="status"></p>
+
+        <!-- Сюди JavaScript додає завдання з API -->
+        <ul id="taskList"></ul>
+
+        <!-- Лічильник -->
+        <p id="counter">Усього: 0 | Не виконано: 0</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
